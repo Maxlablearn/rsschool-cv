@@ -1,1 +1,93 @@
-*
+@font-face {
+    font-family: SplinerSans;
+    src: url(./assets/fonts/SplineSans-VariableFont_wght.ttf);
+}
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'SplinerSans';
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.container {
+   
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-around ;
+    
+}
+
+h2 {
+    font-size: 20px;
+}
+.navigation {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+li > a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(48, 48, 48);
+    padding: 10px 20px;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 20px 20px 20px 5px;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.main {
+    align-self: flex-start;
+   
+    flex: 1;
+    
+
+}
+
+.cv-photo {
+    height: 400px;
+    width: 300px;
+    background-color: gray;
+}
+.aside {
+    background-color: rgb(209, 209, 209);
+    
+}
+
+.section {
+    padding: 30px;
+    flex: 1;
+    background-color: whitesmoke;
+}
+
+.header {
+   
+    background-color: rgb(209, 209, 209);
+   
+}
+
+.footer {
+    
+    flex-basis: 10vh;
+    background-color: rgb(209, 209, 209);
+   
+}

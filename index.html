@@ -4,9 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/cv.ico">
 </head>
 <body>
-    
+    <div class="flex-container">
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <ul class="navigation">
+                        <li> <a href="#">About me</a></li>
+                        <li> <a href="#">Skills</a></li>
+                        <li> <a href="#">Code</a></li>
+                        <li> <a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="main-container">
+                    <aside class="aside">
+                         <div class="cv-photo">
+                             <img src="./cv.ico" alt="Maksim Nikaniuk">
+                         </div>
+                         <h1>Maksim Nikaniuk</h1>
+                         <h2>My Contact Info</h2>
+                         <ul>
+                             <li><p> Discord: maxlablearn</p></li>
+                             <li><p>E-mail: maxlablearn@gmail.com</p></li>
+                             <li><p>GitHub: maxlablearn</p></li>
+                             <li><p>Location: Belarus Baranovichi</p></li>
+                         </ul>
+     
+                     </aside>
+                     <section class="section">
+                         <article>
+                             <section id="about-me">
+                                 <h2>Briefly About Myself</h2>
+                                 <p>I have a higher technical education. Worked as the head of laboratory of non-destructive testing. Currently I am working as an engineer on the railway.
+                                     I decided to change my profession, and because I was always interested in computers, I participated in school and city programming olympiads, I chose Front-End development. Studied microcontrollers  and assembler.
+                                     I enjoy understanding code, developing new and interesting things.
+                                 </p>
+                             </section>
+                             <section id="skills">
+                                 <h2>Skills</h2>
+                                 <ul>
+                                     <li><p>HTML</p></li>
+                                     <li><p>CSS</p></li>
+                                     <li><p>JavaScript (Basic)</p></li>
+                                     <li><p>Git</p></li>
+                                 </ul>
+                             </section>
+                             <section id="code-example">
+                                 <h2>Code Example</h2>
+                                 <p><b>CodeWars:</b> Write a function which partitions a list of items based on a given predicate.
+                                     After the partition function is run, the list should be of the form [ F, F, F, T, T, T ] where the Fs (resp. Ts) are items for which the predicate function returned false (resp. true).</p>
+                                     
+                                 <pre>
+     function partitionOn(pred, items) {
+         let firstArr=[];
+         let secondArr=[];
+         let med;
+         for (let i=items.length; i>0; i--){  
+             if (!pred(items[0])){               
+             firstArr.push(items.shift()); 
+             } else {                            
+             secondArr.push(items.shift());
+             }
+         }
+         med=firstArr.length;
+         items.push.apply(firstArr,secondArr);    
+         items.push.apply(items,firstArr); 
+         return med;
+     }
+                                 </pre>
+                             </section>
+                             <section id="language">
+                                 <h2>Language</h2>
+                                 <p>English level - A2 (Training with Duolingo)</p>
+                             </section>
+                         </article>
+                     </section> 
+                 </div>
+            </div>
+            
+        </main>
+        <footer class=" footer">
+            <div class="container">
+                <p>footer there</p>
+                <p>footer there</p> 
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
