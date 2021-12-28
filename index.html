@@ -11,20 +11,17 @@
 <body>
     <div class="flex-container">
         <header class="header">
-            
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"> <a class="nav-link" href="#about-me">About me</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#code-example">Code</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#contacts">Contacts</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#language">Language</a></li>
-                    </ul>
-                </nav>
-           
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"> <a class="nav-link" href="#about-me">About me</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#code-example">Code</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#contacts">Contacts</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#language">Language</a></li>
+                </ul>
+            </nav>
         </header>
-        <main class="main">
-           
+        <main class="main">          
                 <div class="main-container">
                     <aside class="aside">
                          <div class="cv-photo">
@@ -34,8 +31,9 @@
                          <h2 id="contacts" >My Contact Info</h2>
                          <ul>
                              <li><p> Discord: maxlablearn</p></li>
-                             <li><p>E-mail: maxlablearn@gmail.com</p></li>
                              <li><a class="link" href="https://github.com/Maxlablearn">GitHub: maxlablearn</a></li>
+                             <li><p>E-mail: maxlablearn@gmail.com</p></li>
+                             <li><a class="link" href="https://www.codewars.com/users/maxlablearn">Codewars</a></li>
                              <li><p>Location: Belarus Baranovichi</p></li>
                          </ul>
      
@@ -44,7 +42,7 @@
                          
                              <section id="about-me">
                                  <h2>Briefly About Myself</h2>
-                                 <p>I have a higher technical education. Worked as the head of laboratory of non-destructive testing. Currently I am working as an engineer on the railway.
+                                 <p>I have a higher technical education (Belarusian State University of Transport). Worked as the head of laboratory of non-destructive testing. Currently I am working as an engineer on the railway.
                                      I decided to change my profession, and because I was always interested in computers, I participated in school and city programming olympiads, I chose Front-End development. Studied microcontrollers  and assembler.
                                      I enjoy understanding code, developing new and interesting things.
                                  </p>
@@ -60,26 +58,26 @@
                              </section>
                              <section id="code-example">
                                  <h2>Code Example</h2>
-                                 <p><b>CodeWars:</b> Write a function which partitions a list of items based on a given predicate.
+                                 <p><b>CodeWars</b>: Write a function which partitions a list of items based on a given predicate.
                                      After the partition function is run, the list should be of the form [ F, F, F, T, T, T ] where the Fs (resp. Ts) are items for which the predicate function returned false (resp. true).</p>
                                      
-                                 <pre>
-  function partitionOn(pred, items) {
-      let firstArr=[];
-      let secondArr=[];
-      let med;
-      for (let i=items.length; i>0; i--){  
-          if (!pred(items[0])){               
-          firstArr.push(items.shift()); 
-          } else {                            
-          secondArr.push(items.shift());
-          }
-      }
-      med=firstArr.length;
-      items.push.apply(firstArr,secondArr);    
-      items.push.apply(items,firstArr); 
-      return med;
-  }
+                                <pre class="code">
+function partitionOn(pred, items) {
+    let firstArr=[];
+    let secondArr=[];
+    let med;
+    for (let i=items.length; i>0; i--){  
+        if (!pred(items[0])){               
+        firstArr.push(items.shift()); 
+        } else {                            
+        secondArr.push(items.shift());
+        }
+    }
+    med=firstArr.length;
+    items.push.apply(firstArr,secondArr);    
+    items.push.apply(items,firstArr); 
+    return med;
+}
 </pre>
                              </section>
                              <section id="language">
@@ -93,7 +91,7 @@
             
         </main>
         <footer class=" footer">
-            <a href="https://rs.school/js-stage0/"><div class="rslogo"></div></a>
+            <a href="https://rs.school/js/"><div class="rslogo"></div></a>
             <div class="year">2021</div>
             <a href="https://github.com/Maxlablearn"><div class="gitlogo"></div></a>
         </footer>
