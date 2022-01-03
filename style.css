@@ -37,7 +37,8 @@ h2 {
     list-style: none;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    min-height: 50px;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -68,6 +69,9 @@ h2 {
 @media screen and (max-width: 800px) {
     .main-container {
         flex-direction: column;
+    }
+    .nav-item {
+        margin: 20px 5px;
     }
 }
 
