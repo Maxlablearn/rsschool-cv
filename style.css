@@ -76,11 +76,14 @@ h2 {
     flex: 1;
 }
 
+.cv-photo-container {
+    overflow: hidden;
+    margin: 0 auto;
+}
 .cv-photo {
     height: 400px;
     width: 300px;
-    background-color: gray;
-    margin: 0 auto;
+    object-fit:scale-down; 
 }
 
 .aside {
