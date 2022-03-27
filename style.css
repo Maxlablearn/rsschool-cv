@@ -1,0 +1,211 @@
+@font-face {
+    font-family: SplinerSans;
+    src: url(./assets/fonts/SplineSans-VariableFont_wght.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'SplinerSans';
+    color: rgb(48, 48, 48);
+    margin: 0px;
+    padding: 0px;
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+ul {
+    padding-inline-start: 0px;
+    margin-top: 10px;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 15px;
+
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+    flex-wrap: wrap;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(48, 48, 48);
+    padding: 10px 20px;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 20px 20px 20px 5px;
+    transition: 1s;
+}
+
+.nav-link:hover {
+    transition-duration: 0.7s;
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 20px 20px 5px 20px;
+    transform: scale(1.2);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1150px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .nav-item {
+        margin: 20px 5px;
+    }
+    .aside {
+        justify-content: center;
+    }
+}
+
+.main {
+    align-self: flex-start;
+    flex: 1;
+}
+
+.cv-photo-container {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.cv-photo {
+    height: 480px;
+    width: 360px;
+    object-fit:scale-down; 
+}
+
+.aside {
+    background-color: rgb(209, 209, 209);
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-container {
+    padding: 10px 30px 30px;
+    flex: 1;
+    background-color: whitesmoke;
+}
+
+.code {
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.header {
+    flex: 1;
+    background-color: rgb(209, 209, 209);
+}
+
+.footer {
+    height: 80px;
+    flex: 1;
+    display: flex;
+    background-color: rgb(209, 209, 209);
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    
+    color: rgb(48, 48, 48);
+    transition-duration: 1s;
+}
+.link:hover {
+    color: rgb(204, 27, 27);
+    transition-duration: 0.5s;
+}
+
+.scale {
+    display: block;
+    position: relative;
+    width: 400px;
+    transition-duration: 800ms;
+    transition-delay: 500ms;
+}
+.scale:hover {
+    transform: scale(1.5) translateX(70px);
+    transition-duration: 500ms;
+    transition-delay: 200ms;
+}
+
+.rslogo {
+    margin: 0px 20px;
+    width: 158px;
+    height: 70px;
+    background-image: url("./assets/img/logo-rsschool.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 50%;
+    transition-duration: 1s;
+}
+.rslogo:hover {
+    opacity: 100%;
+    transition-duration: 1s;
+}
+
+.year {
+    margin: auto;
+}
+.year:hover {
+    transform: rotate(1080deg);
+    transition-duration: 1s;
+    color: red;
+}
+
+.gitlogo {
+    margin: 0px 10px;
+    width: 140px;
+    height: 70px;
+    background-image: url("./assets/img/GitHub-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 50%;
+    transition-duration: 1s;
+}
+.gitlogo:hover {
+    opacity: 100%;
+    transition-duration: 1s;
+}
